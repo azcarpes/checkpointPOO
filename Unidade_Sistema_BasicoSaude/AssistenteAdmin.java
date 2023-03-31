@@ -1,18 +1,15 @@
 package CheckpointPOO;
 
-public class AssistenteAdmin {
-    private String nome;
-    private Integer matricula;
+public class AssistenteAdmin extends Profissional {
+
 
     public AssistenteAdmin(String nome, Integer matricula) {
-        this.nome = nome;
-        this.matricula = matricula;
+        super(nome, matricula);
     }
 
     //Getters
-    public String getNome() {
-        return nome;
-    }
+
+    public String getNome() { return nome;}
 
     public Integer getMatricula() {
         return matricula;

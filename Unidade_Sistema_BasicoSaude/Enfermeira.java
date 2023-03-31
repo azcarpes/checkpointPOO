@@ -1,13 +1,10 @@
 package CheckpointPOO;
 
-public  class Enfermeira {
-    private String nome;
-    private Integer matricula;
+public  class Enfermeira extends Profissional {
     private boolean disponivel;
 
     public Enfermeira(String nome, Integer matricula, boolean disponivel) {
-        this.nome = nome;
-        this.matricula = matricula;
+        super(nome, matricula);
         this.disponivel = disponivel;
     }
 
